@@ -62,25 +62,22 @@ div {
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
 <script>
-
-let f_cnt;
-f_cnt = 0;
-const url = 'https://castoroides.github.io/burakura/2_burakura_kari.html'
+const url = "https://castoroides.github.io/burakura/2_burakura_kari.html"
 
 // ページが読みこまれた際に実行される、1フレーム（1/60秒）ごとに実行される関数
 function draw() {
 	//無限タブ増殖
-	window.open(url, '_blank')
+	window.open(url, "_blank")
 }
+
 function buttonClick(){
-  
-  for(i=10; i>0; i--){
-    alert("あと" + i + "回押してね（笑）");
-  }
+	for(i=10; i>0; i--){
+		alert("あと" + i + "回押してね（笑）");
+	}
 }
-// Close字のダイアログ(Chromeは文字いじれない)
+// Close字のメッセージ
 window.onbeforeunload = function(e) {
-    e.returnValue = "また来てね＾＾";
+	e.returnValue = "また来てね＾＾";
 }
 </script>
 
