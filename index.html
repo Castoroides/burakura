@@ -17,8 +17,8 @@
 <body>
   <div>
     <h1>ブラクラ デモ３</h1>
-    <p class=txt id="changeTxt_1">ボタンを押してね</p>
-    <button type="button" class="btn" onclick="buttonClick()" id="changeTxt_2">クリック</button>
+    <p class=txt>ボタンを押してね</p>
+    <button type="button" class="btn" onclick="buttonClick()">クリック</button>
   </div>
 </body>
 
@@ -60,8 +60,6 @@ body {
   const url = "https://castoroides.github.io/burakura/burakura_3.html"
 
   function buttonClick(){
-    document.getElementById("changeTxt_1").innerText = "がんばって閉じてね";
-    document.getElementById("changeTxt_2").innerText = "タブ増殖中";
     
     // 無限ループでタブを増やす
     while(true){
