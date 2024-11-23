@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/Castoroides/uky/main/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kiwi+Maru&family=M+PLUS+Rounded+1c&family=RocknRoll+One&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+  <title>ブラクラデモ 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+</head>
+
+<body>
+  <div>
+    <h1>ブラクラ デモ１</h1>
+    <p class=txt>ボタンを押してね</p>
+    <button type="button" class="btn" onclick="buttonClick()">クリック</button>
+  </div>
+</body>
+
+<style>
+@charset "Shift_JIS";
+h1 {
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem!important;
+  margin: 0;
+  margin-bottom: 50px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック Medium', meiryo, sans-serif!important;
+  background:#ddd;
+  text-align: center;
+  margin: 0;
+}
+.txt {
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 2.0rem;
+}
+.btn {
+  width: 200px;
+  height: 80px;
+  color: #000;
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック Medium', meiryo, sans-serif!important;
+  border-radius: 10px;
+}
+.s_b:hover {
+  opacity: .6;
+    color: #fff;
+}
+</style>
+
+<script>
+function buttonClick(){
+  
+  for(i=10; i>0; i--){
+    alert("あと" + i + "回押してね");
+  }
+}
+</script>
+
+
+</html>
